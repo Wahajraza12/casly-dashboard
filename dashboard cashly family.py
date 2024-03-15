@@ -57,11 +57,10 @@ data = tables[0]
 #Taking the transpose of table
 data = data.T
 #Spliting the dates from string format 
-data[1][1][26:36]
 #Looping into column and saving the dates in list 
 dates = []
 for i in range (1,71):
-    date = data[1][i][26:36]
+    date = data[1][i][29:39]
     dates.append(date)
 #Droping the first and second columns
 data = data.drop(columns=[0])
